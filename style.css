@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 150px 3fr 1fr;
+    grid-template-rows: 1fr 5fr
+
+}
+
+.header {
+    background-color: lightblue;
+    grid-column: 2 / -1;
+    grid-row: 1;
+}
+
+.search-container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.625rem;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-form button {
+    background: none;
+    border: none;
+    font-size: 0.75em;
+}
+
+.search-form input {
+    flex: 1;
+    height: 15px;
+    border: 0.5px solid #E5E7EB;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 1px rgba(107, 107, 107, 0.32);
+    outline: none;
+}
+
+
+.user-details {
+    justify-self: end;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.625em;
+}
+
+.sidebar {
+    background-color: lightcoral;
+    grid-row: 1 / -1;
+    font-size: 14px;
+}
+
+.sidebar div {
+    display: flex;
+    gap: 1.25em;
+    padding: 1em;
+
+}
+
+.sidebar span {
+    font-size: 12px;
+}
+
+.articles {
+    background-color: lightseagreen;
+    grid-column: 2;
+}
+
+.side-content {
+    background-color: lightpink;
+}
