@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,16 +23,23 @@ time, mark, audio, video {
 
 body {
 	line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 ol, ul {
 	list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 150px 3fr 1fr;
+    grid-template-columns: 250px 4fr;
     grid-template-rows: 1fr 5fr
 
 }
@@ -39,12 +48,17 @@ ol, ul {
     background-color: lightblue;
     grid-column: 2 / -1;
     grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem 2rem;
+    font-weight: 600;
 }
+
+/* Search */
 
 .search-container { 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0.625rem;
 }
 
 .search-bar {
@@ -54,12 +68,12 @@ ol, ul {
 .search-form button {
     background: none;
     border: none;
-    font-size: 0.75em;
+    font-size: 1rem;
 }
 
 .search-form input {
     flex: 1;
-    height: 15px;
+    height: 20px;
     border: 0.5px solid #E5E7EB;
     border-radius: 5px;
     box-shadow: 1px 2px 5px 1px rgba(107, 107, 107, 0.32);
@@ -70,32 +84,121 @@ ol, ul {
 .user-details {
     justify-self: end;
     display: flex;
-    gap: 1rem;
-    font-size: 0.625em;
+    align-items: center;
+    font-size: 1rem;
 }
 
+.user-details div:nth-child(even)  {
+    margin: 0 1rem;
+}
+
+.user-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: bisque;
+}
+
+/* User actions */
+
+.user-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 ;
+}
+
+.current-user {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.current-user .user-img img {
+    width: 70px;
+    height: 70px;
+} 
+
+.greet-user p {
+    font-size: 0.625rem;
+}
+
+.greet-user p + p {
+    font-size: 1rem;
+}
+
+.user-actions {
+    justify-self: end;
+    display: flex;
+    gap: 1rem;
+}
+
+.user-actions button {
+    padding: 0.5rem 1.25rem;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+
+/* Sidebar */
 .sidebar {
     background-color: lightcoral;
     grid-row: 1 / -1;
-    font-size: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
 }
 
-.sidebar div {
+.sidebar > div {
     display: flex;
-    gap: 1.25em;
-    padding: 1em;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 1.25rem 0 0 1rem;
+}
 
+.sidebar > div > div {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar span {
-    font-size: 12px;
+    font-size: 1rem;
+    margin-right: 0.75rem;
 }
 
-.articles {
-    background-color: lightseagreen;
+.logo {
+    font-size: 1rem;
+}
+
+.logo span {
+    font-size: 2rem;
+}
+
+.main-content {
+    background-color: #f2f2f2;
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.projects {
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    height: 200px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .side-content {
-    background-color: lightpink;
+
 }

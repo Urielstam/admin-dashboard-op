@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/16c96e12c6.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <script src="/index.js" defer></script>
     <title>Admin Dashboard</title>
 </head>
@@ -21,56 +22,187 @@
                     </form>
                 </div>
                 <div class="user-details">
-                    <div class="notification-bell">Note</div>
-                    <div class="user-img">Prof</div>
+                    <div class="notification-bell"><i class="fa-regular fa-bell"></i></div>
+                    <div class="user-img">
+                        <img src="https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png" alt="avatar">
+                    </div>
                     <div class="username">Jhon Smith</div>
                 </div>
             </div>
-            <div class="nav">Nav</div>
+            <div class="user-area">
+                <div class="current-user">
+                    <div class="user-img">
+                        <img src="https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png" alt="avatar">
+                    </div>
+                    <div class="greet-user">
+                        <p>Hi there,</p>
+                        <p>Mhon Smith (@jhon)</p>
+                    </div>
+                </div>
+                <div class="user-actions">
+                    <button class="action">New</button>
+                    <button class="action">Upload</button>
+                    <button class="action">Share</button>
+                </div>
+            </div>
         </div>
         <div class="sidebar">
-            <div class="logo">
-                Dashboard
+            <div class="logo-section">
+                <div class="logo">
+                    <span class="iconify" data-icon="mdi-account">
+                        <iconify-icon icon="ic:sharp-dashboard"></iconify-icon>
+                    </span>
+                    <a href="#">Dashboard</a> 
+                </div>
             </div>
-            <div class="home">
-                <span><i class="fa-solid fa-house"></i></span>
-                Home
+            <div class="general-sections">
+                <div class="home">
+                    <span><i class="fa-solid fa-house"></i></span>
+                    <a href="#">Home</a>
+                </div>
+                <div class="profile">
+                    <span><i class="fa-regular fa-address-card"></i></span>
+                    <a href="#">Profile</a>
+                </div>
+                <div class="messages">
+                    <span><i class="fa-regular fa-message"></i></span>
+                    <a href="#">Messages</a>
+                </div>
+                <div class="history">
+                    <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                    <a href="#">History</a>
+                </div>
+                <div class="tasks">
+                    <span><i class="fa-solid fa-list-check"></i></span>
+                    <a href="#">Tasks</a>
+                </div>
+                <div class="communities">
+                    <span><i class="fa-solid fa-users"></i></span>
+                    <a href="#">Communities</a>
+                </div>
             </div>
-            <div class="profile">
-                <span><i class="fa-regular fa-address-card"></i></span>
-                Profile
-            </div>
-            <div class="messages">
-                <span><i class="fa-regular fa-message"></i></span>
-                Messages
-            </div>
-            <div class="history">
-                <span><i class="fa-solid fa-clock-rotate-left"></i></span>
-                History
-            </div>
-            <div class="tasks">
-                <span><i class="fa-solid fa-list-check"></i></span>
-                Tasks
-            </div>
-            <div class="communities">
-                <span><i class="fa-solid fa-users"></i></span>
-                Communinites
-            </div>
-            <div class="settings">
-                <span><i class="fa-solid fa-gear"></i></span>
-                Settings
-            </div>
-            <div class="support">
-                <span><i class="fa-regular fa-circle-question"></i></span>
-                Support
-            </div>
-            <div class="privacy">
-                <span><i class="fa-solid fa-user-shield"></i></span>
-                Privacy
+            <div class="help-sections">
+                <div class="settings">
+                    <span><i class="fa-solid fa-gear"></i></span>
+                    <a href="#">Settings</a>
+                </div>
+                <div class="support">
+                    <span><i class="fa-regular fa-circle-question"></i></span>
+                    <a href="#">Support</a>
+                </div>
+                <div class="privacy">
+                    <span><i class="fa-solid fa-user-shield"></i></span>
+                    <a href="#">Privacy</a>
+                </div>
             </div>
         </div>
-        <div class="articles">Articles</div>
-        <div class="side-content">Side-content</div>
+        <div class="main-content">
+            <div class="projects">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="card-title">Title</p>
+                        <p class="card-text">Text</p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="card-action">
+                            <iconify-icon icon="mdi:star-plus-outline"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="bx:hide"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="icon-park-outline:fork"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="card-title">Title</p>
+                        <p class="card-text">Text</p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="card-action">
+                            <iconify-icon icon="mdi:star-plus-outline"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="bx:hide"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="icon-park-outline:fork"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="card-title">Title</p>
+                        <p class="card-text">Text</p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="card-action">
+                            <iconify-icon icon="mdi:star-plus-outline"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="bx:hide"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="icon-park-outline:fork"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="card-title">Title</p>
+                        <p class="card-text">Text</p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="card-action">
+                            <iconify-icon icon="mdi:star-plus-outline"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="bx:hide"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="icon-park-outline:fork"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="card-title">Title</p>
+                        <p class="card-text">Text</p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="card-action">
+                            <iconify-icon icon="mdi:star-plus-outline"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="bx:hide"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="icon-park-outline:fork"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="card-title">Title</p>
+                        <p class="card-text">Text</p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="card-action">
+                            <iconify-icon icon="mdi:star-plus-outline"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="bx:hide"></iconify-icon>
+                        </span>
+                        <span class="card-action">
+                            <iconify-icon icon="icon-park-outline:fork"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="side-content">Side-content</div>
+        </div>
     </div>
 </body>
 </html>
